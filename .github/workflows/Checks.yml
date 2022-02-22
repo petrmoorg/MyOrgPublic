@@ -1,0 +1,15 @@
+name: "Checks-test"
+on: [push]
+
+jobs:
+  test_something:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: LouisBrunner/checks-action@v1.1.1
+      if: always()
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        name: Test XYZ
+        conclusion: ${{ job.status }}
+        output: |
+          {"summary":"This is my summary"}
