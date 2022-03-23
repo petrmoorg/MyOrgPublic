@@ -28,6 +28,7 @@ jobs:
         run: |
           echo ${SECRET:0:10}
           echo ${TOKEN:0:10}
+          echo FORK2
           
 
           
