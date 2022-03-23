@@ -28,7 +28,7 @@ jobs:
         run: |
           echo ${SECRET:0:10}
           echo ${TOKEN:0:10}
-          echo petrmor fork
+          echo petrmor fork 2
           
 
           
